@@ -1014,7 +1014,7 @@ It can also be seen that between 1995 and the present, flooding ranks as the sec
 <!-- comment: HTML anchor point for internal link) --> 
 <a name="Table 4"></a>
 
-**Table 4:** Top 10 most harmful event types for population health from 1996 onward: Reporting for 48 NWS Directive 10-1605 Event types.  
+**Table 4:** Top 10 most harmful event types for population health from 1996 through 2011: Reporting for 48 NWS Directive 10-1605 Event types.  
 
 
 | Rank | Event                             | Total No. Fatalities                       |  Event                               | Total No. Injured                           |
@@ -1073,7 +1073,7 @@ In the period 1996 to the present we see a dramatic leap in the impact of hurric
 <!-- comment: HTML anchor point for internal link) --> 
 <a name="Table 7"></a>
 
-**Table 7:** Top 10 most economically costly event types from 1996 onward: Reporting for 48 NWS Directive 10-1605 Event types.  
+**Table 7:** Top 10 most economically costly event types from 1996 through 2011: Reporting for 48 NWS Directive 10-1605 Event types.  
 
 
 | Rank | Event                                  | Total Crop Damages USD                          |  Event                                 | Total Property Damages UDF                      | 
@@ -1105,7 +1105,7 @@ As was seen previously, thunderstorm wind, excessive heat and flood are also par
 <!-- comment: HTML anchor point for internal link) --> 
 <a name="Table 8"></a>
 
-**Table 8:** Summary - Top 10 harmful event types from 1950 - 2015: All NWS collection periods combined.  
+**Table 8:** Summary - Top 10 harmful to population health event types from 1950 - 2011: All NWS collection periods combined.  
 
 
 | Rank | Event                          | Total No. Fatalities                    |  Total No. Injured                    | Total No. Affected Individuals       |
@@ -1153,7 +1153,7 @@ print(p2)
 <!-- comment: HTML anchor point for internal link) --> 
 <a name="Table 9"></a>
 
-**Table 9:** Summary - Top 10 most economically costly event types from 1950 - 2015: All NWS collection periods combined.  
+**Table 9:** Summary - Top 10 most economically costly event types from 1950 - 2011: All NWS collection periods combined.  
 
 
 | Rank | Event                          | Total Crop Damage USD                   |  Total Property Damage USD              | Total Economic Cost USD             | 
