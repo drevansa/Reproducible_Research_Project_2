@@ -128,6 +128,12 @@ fmt_rounded_big_mark_dollar_fun &lt;- function(x){
 <pre class="r"><code># Extraction of NWS Directive 10-1605 Event types from pd01016005curr.pdf
 # Using method of Gregory D. Horne TA:
 # https://class.coursera.org/repdata-033/forum/thread?thread_id=46
+
+if (!file.exists(&quot;pd01016005curr.pdf&quot;)) { 
+        URL &lt;- &quot;https://www.ncdc.noaa.gov/stormevents/pd01016005curr.pdf&quot;
+        download.file(URL, destfile = &quot;../AECode/pd01016005curr.pdf&quot;)
+}
+
 pdf &lt;- readPDF(control = list(c(text = &quot;-layout&quot;)))
 pdf &lt;- pdf(elem=list(uri=&quot;pd01016005curr.pdf&quot;),language=&quot;en&quot;)
 events &lt;- c(pdf$content[seq(397, 420)], pdf$content[seq(425, 448)])
@@ -363,7 +369,7 @@ cc = vars
 if (!file.exists(&quot;repdata_data_StormData.csv&quot;)) {
     if (!file.exists(&quot;repdata_data_StormData.csv.bz2&quot;)) { 
         URL &lt;- &quot;https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FStormData.csv.bz2&quot;
-        download.file(URL, destfile = &quot;Project_2/repdata_data_StormData.csv.bz2&quot;)
+        download.file(URL, destfile = &quot;../AECode/repdata_data_StormData.csv.bz2&quot;)
     }
     stormdata &lt;- read.csv(&quot;repdata_data_StormData.csv.bz2&quot;, sep=&quot;,&quot;, na.strings = &quot;&quot;, 
                          header=TRUE, nrows=nr, colClasses=cc, strip.white=TRUE)

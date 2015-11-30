@@ -97,6 +97,12 @@ NWS Directive 10-1605 event types, introduced in 1996, were acquired from [NWS S
 # Extraction of NWS Directive 10-1605 Event types from pd01016005curr.pdf
 # Using method of Gregory D. Horne TA:
 # https://class.coursera.org/repdata-033/forum/thread?thread_id=46
+
+if (!file.exists("pd01016005curr.pdf")) { 
+        URL <- "https://www.ncdc.noaa.gov/stormevents/pd01016005curr.pdf"
+        download.file(URL, destfile = "../AECode/pd01016005curr.pdf")
+}
+
 pdf <- readPDF(control = list(c(text = "-layout")))
 pdf <- pdf(elem=list(uri="pd01016005curr.pdf"),language="en")
 events <- c(pdf$content[seq(397, 420)], pdf$content[seq(425, 448)])
@@ -183,7 +189,7 @@ cc = vars
 if (!file.exists("repdata_data_StormData.csv")) {
     if (!file.exists("repdata_data_StormData.csv.bz2")) { 
         URL <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2FStormData.csv.bz2"
-        download.file(URL, destfile = "Project_2/repdata_data_StormData.csv.bz2")
+        download.file(URL, destfile = "../AECode/repdata_data_StormData.csv.bz2")
     }
     stormdata <- read.csv("repdata_data_StormData.csv.bz2", sep=",", na.strings = "", 
                          header=TRUE, nrows=nr, colClasses=cc, strip.white=TRUE)
